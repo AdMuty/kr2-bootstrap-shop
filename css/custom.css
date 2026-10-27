@@ -1,10 +1,32 @@
+/* Только минимальные дополнения к Bootstrap */
+
+/* Задаём минимальную высоту для body, чтобы подвал прижимался к низу,
+   если контента мало  */
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Основной контент растягивается, чтобы прижать футер */
+main {
+    flex: 1;
+}
+
+/* Временный блок для изображения */
 .placeholder-box {
     min-height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.placeholder-image {
+    min-height: 320px;
+}
+
+/* Чтобы картинки в карточках */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; 
 }
