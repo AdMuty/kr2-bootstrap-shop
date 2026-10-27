@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заявка – VeloShop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
@@ -60,14 +60,14 @@
                                 <!-- Имя -->
                                 <div class="col-12 col-md-6">
                                     <label for="order-name" class="form-label">Имя *</label>
-                                    <input type="text" class="form-control" id="order-name" required>
+                                    <input type="text" class="form-control" id="order-name" placeholder="Введите ваше имя" required>
                                 </div>
                                 <!-- Email -->
                                 <div class="col-12 col-md-6">
                                     <label for="order-email" class="form-label">E-mail *</label>
-                                    <input type="email" class="form-control" id="order-email" required>
+                                    <input type="email" class="form-control" id="order-email" placeholder="example@mail.ru" required>
                                 </div>
-                                <!-- Телефон (с input-group) -->
+                                <!-- Телефон -->
                                 <div class="col-12 col-md-6">
                                     <label for="order-phone" class="form-label">Телефон *</label>
                                     <div class="input-group">
@@ -77,24 +77,42 @@
                                 </div>
                                 <!-- Выбор велосипеда -->
                                 <div class="col-12 col-md-6">
-                                    <label for="order-product" class="form-label">Велосипед *</label>
-                                    <select class="form-select" id="order-product" required>
-                                        <option selected disabled value="">Выберите модель</option>
-                                        <option value="1">Trek Marlin 5</option>
-                                        <option value="2">Giant Escape 3</option>
-                                        <option value="3">Merida Scultura</option>
+                                    <label for="order-tour" class="form-label">Велосипед *</label>
+                                    <select class="form-select" id="order-tour" required>
+                                        <option value="" selected disabled>Выберите модель</option>
+                                        <option value="marlin">Trek Marlin 5</option>
+                                        <option value="escape">Giant Escape 3</option>
+                                        <option value="scultura">Merida Scultura</option>
+                                        <option value="big-nine">Merida Big Nine 15</option>
+                                        <option value="renegade">Format Renegade</option>
+                                        <option value="roubaix">Specialized Roubaix</option>
+                                        <option value="navigator">Stels Navigator 700</option>
+                                        <option value="format">Format 1414</option>
+                                        <option value="apache">Forward Apache 27.5</option>
                                     </select>
+                                </div>
+                                <!-- Дата -->
+                                <div class="col-12 col-md-6">
+                                    <label for="order-date" class="form-label">Дата покупки</label>
+                                    <input type="date" class="form-control" id="order-date">
+                                </div>
+                                <!-- Количество -->
+                                <div class="col-12 col-md-6">
+                                    <label for="order-qty" class="form-label">Количество</label>
+                                    <input type="number" class="form-control" id="order-qty" value="1" min="1" max="10">
                                 </div>
                                 <!-- Комментарий -->
                                 <div class="col-12">
                                     <label for="order-comment" class="form-label">Комментарий</label>
-                                    <textarea class="form-control" id="order-comment" rows="3"></textarea>
+                                    <textarea class="form-control" id="order-comment" rows="3" placeholder="Укажите дополнительную информацию"></textarea>
                                 </div>
-                                <!-- Чекбокс -->
+                                <!-- Согласие -->
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="order-agree" required>
-                                        <label class="form-check-label" for="order-agree">Я согласен на обработку данных *</label>
+                                        <label class="form-check-label" for="order-agree">
+                                            Я согласен на обработку данных *
+                                        </label>
                                     </div>
                                 </div>
                                 <!-- Кнопки -->
@@ -127,6 +145,6 @@
     </footer>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

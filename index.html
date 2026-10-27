@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная – VeloShop</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Собственные стили -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -55,8 +54,8 @@
                     <a class="btn btn-primary btn-lg" href="catalog.html">Смотреть каталог</a>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="p-5 bg-light border rounded text-center placeholder-box">
-                        <p class="mb-0 text-muted">Здесь будет фото велосипеда или баннер</p>
+                    <img src="images/hero-bike.jpg" class="img-fluid rounded shadow-sm" alt="Велосипед">
+                        
                     </div>
                 </div>
             </div>
@@ -96,32 +95,43 @@
             <div class="row g-4">
                 <!-- Карточка 1 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-success mb-3">Новинка</span>
-                        <h3 class="h5">Горный Trek Marlin 5</h3>
-                        <p class="text-muted">21 скорость, алюминиевая рама, дисковые тормоза.</p>
-                        <p class="fw-bold mb-3">45 000 ₽</p>
-                        <a class="btn btn-primary" href="product.html">Подробнее</a>
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/marlin.jpg" class="card-img-top" alt="Горный Trek Marlin 5">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-2 align-self-start">Новинка</span>
+                            <h3 class="h5 card-title">Горный Trek Marlin 5</h3>
+                            <p class="text-muted card-text">21 скорость, алюминиевая рама, дисковые тормоза.</p>
+                            <p class="fw-bold mb-3 mt-auto">45 000 ₽</p>
+                            <a class="btn btn-primary w-100" href="product.html">Подробнее</a>
+                        </div>
                     </div>
                 </div>
+                
                 <!-- Карточка 2 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-warning text-dark mb-3">Хит</span>
-                        <h3 class="h5">Городской Giant Escape 3</h3>
-                        <p class="text-muted">Лёгкая рама, 7 скоростей, идеален для города.</p>
-                        <p class="fw-bold mb-3">38 000 ₽</p>
-                        <a class="btn btn-primary" href="product.html">Подробнее</a>
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/escape.jpg" class="card-img-top" alt="Городской Giant Escape 3">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start">Хит</span>
+                            <h3 class="h5 card-title">Городской Giant Escape 3</h3>
+                            <p class="text-muted card-text">Лёгкая рама, 7 скоростей, идеален для города.</p>
+                            <p class="fw-bold mb-3 mt-auto">38 000 ₽</p>
+                            <a class="btn btn-primary w-100" href="product.html">Подробнее</a>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Карточка 3 -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="border rounded h-100 p-4">
-                        <span class="badge bg-danger mb-3">Скидка</span>
-                        <h3 class="h5">Шоссейный Merida Scultura</h3>
-                        <p class="text-muted">Карбоновая рама, 22 скорости, для гонок.</p>
-                        <p class="fw-bold mb-3">120 000 ₽</p>
-                        <a class="btn btn-primary" href="product.html">Подробнее</a>
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/scultura.jpg" class="card-img-top" alt="Шоссейный Merida Scultura">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">Скидка</span>
+                            <h3 class="h5 card-title">Шоссейный Merida Scultura</h3>
+                            <p class="text-muted card-text">Карбоновая рама, 22 скорости, для гонок.</p>
+                            <p class="fw-bold mb-3 mt-auto">120 000 ₽</p>
+                            <a class="btn btn-primary w-100" href="product.html">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,6 +154,6 @@
     </footer>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
